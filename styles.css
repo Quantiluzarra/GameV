@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+#menu {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameCanvas {
+    border: 1px solid white;
+}

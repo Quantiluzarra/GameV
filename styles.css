@@ -1,10 +1,12 @@
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #000;
     color: white;
+    font-family: 'Arial', sans-serif;
 }
 
 #menu {
@@ -16,5 +18,23 @@ body {
 }
 
 #gameCanvas {
-    border: 1px solid white;
+    border: 2px solid white;
+    background-image: url('https://example.com/background.jpg'); /* Замените на URL вашего фона */
+    background-size: cover;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

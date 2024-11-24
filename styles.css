@@ -1,40 +1,63 @@
-body {
+* {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    color: white;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#menu {
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-.hidden {
-    display: none;
+nav ul {
+    list-style-type: none;
 }
 
-#gameCanvas {
-    border: 2px solid white;
-    background-image: url('https://example.com/background.jpg'); /* Замените на URL вашего фона */
-    background-size: cover;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
+nav a {
     color: white;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #0056b3;
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
 }
